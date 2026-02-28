@@ -1,0 +1,14 @@
+# Core dependencies for Face Mask Detection using YOLOv8
+ultralytics>=8.0.0        # YOLOv8 framework (includes PyTorch dependency)
+torch>=2.0.0              # PyTorch deep learning framework
+torchvision>=0.15.0       # Computer vision utilities for PyTorch
+opencv-python>=4.8.0      # Image and video processing
+matplotlib>=3.7.0         # Plotting training curves and sample images
+numpy>=1.24.0             # Numerical operations
+Pillow>=10.0.0            # Image loading/saving
+
+# Deployment dependencies
+fastapi>=0.100.0          # Web framework for the inference API
+uvicorn[standard]>=0.23.0 # ASGI server to run FastAPI
+python-multipart>=0.0.6   # Multipart form data support (file uploads)
+onnxruntime>=1.16.0       # ONNX runtime for CPU inference

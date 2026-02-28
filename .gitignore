@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# YOLOv8 / Ultralytics training outputs (large binary files)
+runs/
+*.pt
+*.onnx
+*.torchscript
+*.engine
+*.tflite
+*.pb
+
+# Output images and videos (generated files)
+outputs/*.jpg
+outputs/*.jpeg
+outputs/*.png
+outputs/*.mp4
+outputs/*.avi
+
+# Datasets (download separately — see data/README.md)
+data/images/train/*
+data/images/val/*
+data/labels/train/*
+data/labels/val/*
+!data/images/train/.gitkeep
+!data/images/val/.gitkeep
+!data/labels/train/.gitkeep
+!data/labels/val/.gitkeep
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Logs
+*.log
+wandb/
+mlruns/

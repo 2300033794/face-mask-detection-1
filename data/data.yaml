@@ -1,0 +1,30 @@
+# ============================================================
+# data.yaml — YOLO Dataset Configuration for Face Mask Detection
+# ============================================================
+#
+# YOLO expects this file to specify where the training and
+# validation image folders are located and what classes exist.
+#
+# Annotation format (one .txt file per image, same filename):
+#   <class_id> <x_center> <y_center> <width> <height>
+# All values are normalised to [0, 1] relative to image size.
+#
+# Example label line:
+#   0 0.512 0.374 0.210 0.315
+#   └─ class 0 (with_mask) centred at (51.2%, 37.4%) of the image
+#      with bounding box occupying 21% width × 31.5% height
+# ============================================================
+
+# Paths are relative to this file's location.
+# Update these to point at your actual dataset directories.
+path: .                      # dataset root directory
+train: images/train          # training images (relative to 'path')
+val:   images/val            # validation images (relative to 'path')
+
+# Number of classes
+nc: 2
+
+# Class names — order must match the integer class IDs in label files
+names:
+  0: with_mask
+  1: without_mask
