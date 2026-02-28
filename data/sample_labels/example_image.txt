@@ -1,0 +1,16 @@
+# Example YOLO annotation file for a single image
+#
+# Format per line:
+#   <class_id> <x_center> <y_center> <width> <height>
+#
+# All coordinates are normalised to [0, 1] relative to the image dimensions.
+#
+# class_id  0 = with_mask
+# class_id  1 = without_mask
+#
+# The image this label file accompanies contains two detected faces:
+#   1. A person wearing a mask  (left side of the image)
+#   2. A person without a mask  (right side of the image)
+
+0 0.2500 0.3750 0.1800 0.2600
+1 0.7200 0.4100 0.2000 0.2800
